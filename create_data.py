@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 from sklearn.datasets import make_classification
-import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 
 # Create a simulated feature matrix and output vector with 100 samples,
 features, output = make_classification(n_samples = 100,
